@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-header img{
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+nav button{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.first-section{
+    background-image: url('/sources/backgorund.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.first-section-paragraph{
+    text-align: center;
+    padding-top: 20%;
+}
+
+.first-section-paragraph h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.first-section-paragraph p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.first-section-paragraph button{
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.about-section{
+    margin: 30px;
+    margin: 50px 200px;
+    display: flex;
+    justify-content: center;    
+    gap: 20px;
+}
+
+.about-section img{
+    width: 300px;
+    height: 500px;
+}
+
+.about-paragraph{
+    margin-top: 15%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-paragraph h2{
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.translate-section {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.translate-section h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.translate-section button{
+    padding: 12px;
+    width: 100px;
+    background-color: rgb(51, 240, 48);
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    border-top: solid 1px;
+    padding: 15px;
+}
