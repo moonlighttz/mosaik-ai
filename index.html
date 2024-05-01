@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mosaik.AI</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-       <div class="logo-header">
-            <img src="/sources/logo.png"/>
-            <h1><a href="#">Mosaik.AI</a></h1>
-       </div>
-        <nav>
-            <a href="#about">About</a>
-            <button><a href="#translate">Start Now</a></button>
-        </nav>
+      <div class="logo-header">
+        <img src="sources/logo.png" />
+        <h1><a href="#">Mosaik.AI</a></h1>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <button><a href="#translate">Start Now</a></button>
+      </nav>
     </header>
     <main>
-        <div class="first-section">
-            <div class="first-section-paragraph">
-                <h1>Mosaik.AI</h1>
-                <p>A useful speech translation technology using the AI Speech Recognition to help you translate anything you want!</p>
-                <button><a href="#translate">Start Now</a></button>
-            </div>
+      <div class="first-section">
+        <div class="first-section-paragraph">
+          <h1>Mosaik.AI</h1>
+          <p>
+            A useful speech translation technology using the AI Speech
+            Recognition to help you translate anything you want!
+          </p>
+          <button><a href="#translate">Start Now</a></button>
+        </div>
+      </div>
+
+      <div id="about" class="about-section">
+        <img src="sources/about.jpg" alt="about" />
+        <div class="about-paragraph">
+          <h2>About</h2>
+          <p>
+            This speech translation AI is really easy to use. We translate from
+            English to Indonesian by receiving speech input from user. You just
+            need to click on the start button to record the speech, and press
+            the translate button to get the translation! FYI, translation can
+            also be read aloud!
+          </p>
+        </div>
+      </div>
+
+      <div id="translate" class="translate-section">
+        <h2>Get Started!</h2>
+
+        <div class="switch-lang">
+          <h3>Choose your preferred speech :</h3>
+          <div>
+            <button
+              onclick="changeLanguage('en-US')"
+              class="lang-btn active"
+              id="speechEnglish"
+            >
+              English
+            </button>
+            <button
+              onclick="changeLanguage('id-ID')"
+              class="lang-btn"
+              id="speechIndonesian"
+            >
+              Indonesia
+            </button>
+          </div>
         </div>
 
-        <div id="about" class="about-section">
-            <img src="/sources/about.jpg" alt="about">
-            <div class="about-paragraph">
-                <h2>About</h2>
-                <p>
-                    This speech translation AI is really easy to use. We translate from English to Indonesian by receiving speech input from user. You just need to click on the start button to record the speech, and press the translate button to get the translation! FYI, translation can also be read aloud!
-                </p>
-            </div>
-        </div>
+        <h3>Speech (<span id="speechLabel">English</span>)</h3>
+        <textarea
+          id="speechInput"
+          rows="5"
+          cols="100"
+          placeholder="Click the Start button to begin"
+        ></textarea>
 
-        <div id="translate" class="translate-section">
-            <h2>Get Started!</h2>
-            <h3>Speech (English)</h3>
-            <textarea id="speechInput" rows="5" cols="100" placeholder="Click the Start button to begin"></textarea><br>
-        
-            <button onclick="startSpeechRecognition()">Start</button><br><br>
-        
-            <h3>Translation (Indoneisa)</h3>
-            <textarea id="translatedOutput" rows="5" cols="100" placeholder="Click the Translate Button for translate"></textarea><br>
-        
-            <button onclick="translateAndReadAloud()">Translate</button><br><br>
-        </div>
+        <button onclick="startSpeechRecognition()" class="start-btn">
+          Start
+        </button>
+
+        <h3>Translation (<span id="translateLabel">Indonesian</span>)</h3>
+        <textarea
+          id="translatedOutput"
+          rows="5"
+          cols="100"
+          placeholder="Click the Translate Button for translate"
+        ></textarea>
+
+        <button onclick="translateAndReadAloud()">Translate</button><br /><br />
+      </div>
     </main>
 
     <footer>
-        <h3>&copy; 2024 | Kelompok 6 IF C-Sore</h3>
+      <h3>&copy; 2024 | Kelompok 6 IF C-Sore</h3>
     </footer>
 
-    <script src="/script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

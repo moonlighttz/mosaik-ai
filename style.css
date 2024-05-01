@@ -2,134 +2,152 @@
     padding: 0;
     margin: 0;
     box-sizing: 0;
-}
-
-header {
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-}
-
-.logo-header{
+  }
+  
+  .logo-header {
     display: flex;
     align-items: center;
-}
-
-.logo-header h1 a{
+  }
+  
+  .logo-header h1 a {
     text-decoration: none;
     color: black;
-}
-
-.logo-header img{
+  }
+  
+  .logo-header img {
     width: 50px;
     height: 50px;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-nav a{
+  }
+  
+  nav a {
     text-decoration: none;
     color: black;
-}
-
-button a{
+  }
+  
+  button a {
     text-decoration: none;
     color: white;
-}
-
-nav button{
+  }
+  
+  nav button {
     padding: 10px;
     color: white;
     background-color: black;
     border: none;
-}
-
-.first-section{
-    background-image: url('/sources/backgorund.avif');
+  }
+  
+  .first-section {
+    background-image: url('sources/backgorund.avif');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-}
-
-.first-section-paragraph{
+  }
+  
+  .first-section-paragraph {
     text-align: center;
     padding-top: 20%;
-}
-
-.first-section-paragraph h1{
+  }
+  
+  .first-section-paragraph h1 {
     font-size: 50px;
     margin-bottom: 10px;
-}
-
-.first-section-paragraph p{
+  }
+  
+  .first-section-paragraph p {
     font-size: 20px;
     margin-bottom: 25px;
-}
-
-.first-section-paragraph button{
+  }
+  
+  .first-section-paragraph button {
     padding: 15px;
     color: white;
     background-color: black;
     border: none;
-}
-
-.about-section{
+  }
+  
+  .about-section {
     margin: 30px;
     margin: 50px 200px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     gap: 20px;
-}
-
-.about-section img{
+  }
+  
+  .about-section img {
     width: 300px;
     height: 500px;
-}
-
-.about-paragraph{
+  }
+  
+  .about-paragraph {
     margin-top: 15%;
     font-size: 20px;
     text-align: justify;
-}
-
-.about-paragraph h2{
+  }
+  
+  .about-paragraph h2 {
     margin-bottom: 25px;
     font-size: 50px;
-}
-
-.translate-section {
+  }
+  
+  .translate-section {
     margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.translate-section h2{
+  }
+  
+  .translate-section h2 {
     font-size: 50px;
-    margin-bottom: 20px;
-}
-
-
-.translate-section button{
+    margin-bottom: 15px;
+  }
+  
+  .translate-section button {
     padding: 12px;
     width: 100px;
     background-color: rgb(51, 240, 48);
     border: none;
     border-radius: 5px;
-}
-
-textarea{
+  }
+  
+  .switch-lang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .switch-lang .lang-btn {
+    background-color: rgb(202, 202, 202);
+    margin-bottom: 10px;
+  }
+  
+  .switch-lang .lang-btn.active {
+    background-color: rgb(51, 240, 48);
+  }
+  
+  textarea {
     padding: 5px;
-}
-
-footer{
+  }
+  
+  .start-btn {
+    margin-bottom: 30px;
+  }
+  footer {
     text-align: center;
     border-top: solid 1px;
     padding: 15px;
-}
+  }
+  
